@@ -29,9 +29,9 @@
 
                                 <div class="form-group">
 
-                                    <strong>apuesta1:</strong>
+                                    <strong><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_Morocco.svg/200px-Flag_of_Morocco.svg.png" width="50px" alt=""></strong>
 
-                                    <input type="text" name="apuesta1" class="form-control" placeholder="Name">
+                                    <input type="text" name="apuesta1" class="form-control">
 
                                 </div>
 
@@ -40,9 +40,9 @@
 
                                 <div class="form-group">
 
-                                    <strong>Apuesta2:</strong>
+                                    <strong><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_Croatia.svg/1280px-Flag_of_Croatia.svg.png" width="50px" alt=""></strong>
 
-                                    <input type="text" name="apuesta2" class="form-control" placeholder="Name">
+                                    <input type="text" name="apuesta2" class="form-control">
 
 
                                 </div>
@@ -54,9 +54,9 @@
 
                                     <div class="form-group">
 
-                                        <strong>apuesta3:</strong>
+                                        <strong><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/640px-Flag_of_Germany.svg.png" width="50px" alt=""></strong>
 
-                                        <input type="text" name="apuesta3" class="form-control" placeholder="Name">
+                                        <input type="text" name="apuesta3" class="form-control">
 
                                     </div>
 
@@ -65,9 +65,9 @@
 
                                     <div class="form-group">
 
-                                        <strong>Apuesta4:</strong>
+                                        <strong><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/200px-Flag_of_Japan.svg.png" width="50px" alt=""></strong>
 
-                                        <input type="text" name="apuesta4" class="form-control" placeholder="Name">
+                                        <input type="text" name="apuesta4" class="form-control">
 
 
                                     </div>
@@ -79,9 +79,9 @@
 
                                         <div class="form-group">
 
-                                            <strong>apuesta5:</strong>
+                                            <strong><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/1200px-Bandera_de_Espa%C3%B1a.svg.png" width="50px" alt=""></strong>
 
-                                            <input type="text" name="apuesta5" class="form-control" placeholder="Name">
+                                            <input type="text" name="apuesta5" class="form-control">
 
                                         </div>
 
@@ -90,9 +90,9 @@
 
                                         <div class="form-group">
 
-                                            <strong>Apuesta6:</strong>
+                                            <strong><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flag_of_Costa_Rica.svg/2560px-Flag_of_Costa_Rica.svg.png" width="50px" alt=""></strong>
 
-                                            <input type="text" name="apuesta6" class="form-control" placeholder="Name">
+                                            <input type="text" name="apuesta6" class="form-control">
 
                                         </div>
 
@@ -103,9 +103,9 @@
 
                                             <div class="form-group">
 
-                                                <strong>apuesta7:</strong>
+                                                <strong><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_Belgium_%28civil%29.svg/1200px-Flag_of_Belgium_%28civil%29.svg.png" width="50px" alt=""></strong>
 
-                                                <input type="text" name="apuesta7" class="form-control" placeholder="Name">
+                                                <input type="text" name="apuesta7" class="form-control">
 
                                             </div>
 
@@ -114,9 +114,9 @@
 
                                             <div class="form-group">
 
-                                                <strong>Apuesta8:</strong>
+                                                <strong><img src="https://static.vecteezy.com/system/resources/previews/001/218/820/non_2x/illustration-of-canada-flag-vector.jpg" width="50px" alt=""></strong>
 
-                                                <input type="text" name="apuesta8" class="form-control" placeholder="Name">
+                                                <input type="text" name="apuesta8" class="form-control">
                                                 <input type="hidden" name="id_resultado" value="1" class="form-control" placeholder="Name">
                                             </div>
 
