@@ -19,12 +19,34 @@ return new class extends Migration
             $table->string('is_active')->nullable()->default(1);
             $table->integer('apuesta1');
             $table->integer('apuesta2');
+            $table->integer('ptsg')->nullable();
+            $table->integer('ptsi1')->nullable();
+            $table->integer('ptsi2')->nullable();
+            $table->integer('ptsab')->nullable();
+
+
             $table->integer('apuesta3');
             $table->integer('apuesta4');
+            $table->integer('ptsg2')->nullable();
+            $table->integer('ptsi3')->nullable();
+            $table->integer('ptsi4')->nullable();
+            $table->integer('ptsab2')->nullable();
+
             $table->integer('apuesta5');
             $table->integer('apuesta6');
+            $table->integer('ptsg3')->nullable();
+            $table->integer('ptsi5')->nullable();
+            $table->integer('ptsi6')->nullable();
+            $table->integer('ptsab3')->nullable();
+
             $table->integer('apuesta7');
             $table->integer('apuesta8');
+            $table->integer('ptsg4')->nullable();
+            $table->integer('ptsi7')->nullable();
+            $table->integer('ptsi8')->nullable();
+            $table->integer('ptsab4')->nullable();
+
+
             $table->integer('total')->nullable()->default(0);
 
             $table->foreignId('id_resultado')->nullable()->constrained('resultados')->cascadeOnUpdate()->nullOnDelete();

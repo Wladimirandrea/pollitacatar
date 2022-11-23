@@ -164,6 +164,10 @@ class ApuestaController extends Controller
              }
 
             $totalganador = $gana1 + $gana2 + $gana3 + $gana4;
+            $apuesta->ptsg = $gana1;
+            $apuesta->ptsg2 = $gana2;
+            $apuesta->ptsg3 = $gana3;
+            $apuesta->ptsg4 = $gana4;
 
 ///////////////   resultados puntos equipos iguales
 
@@ -255,6 +259,14 @@ class ApuestaController extends Controller
 
                 }
 
+            $apuesta->ptsi1 = $puntos;
+            $apuesta->ptsi2 = $puntos2;
+            $apuesta->ptsi3 = $puntos3;
+            $apuesta->ptsi4 = $puntos4;
+            $apuesta->ptsi5 = $puntos5;
+            $apuesta->ptsi6 = $puntos6;
+            $apuesta->ptsi7 = $puntos7;
+            $apuesta->ptsi8 = $puntos8;
 
             $totalmarcador= $puntos + $puntos2 + $puntos3 + $puntos4 + $puntos5 + $puntos6 + $puntos7 + $puntos8;
 
@@ -359,8 +371,14 @@ class ApuestaController extends Controller
                 }
             }
 
-
             $totalaltabaja = $totalalta + $totalalta2 + $totalalta3 + $totalalta4 +$totalalta5 + $totalalta6 + $totalalta7 + $totalalta8;
+            $apuesta->ptsab = $totalalta + $totalalta2;
+            $apuesta->ptsab2 = $totalalta3 + $totalalta4;
+            $apuesta->ptsab3 = $totalalta5 + $totalalta6;
+            $apuesta->ptsab4 = $totalalta7 + $totalalta8;
+
+
+
 
 
             $apuesta->total =  $totalganador  +  $totalmarcador +  $totalaltabaja ;
