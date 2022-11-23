@@ -5,7 +5,7 @@
                 <div class="card-header">Dashboard</div>
                 <div class="pull-right">
 
-                    <a class="btn btn-success" href="{{ route('apuestas.create') }}"> Create New Product</a>
+                    <a class="btn btn-success" href="{{ route('apuestas.create') }}">Nueva Apuesta</a>
 
                 </div>
                 <div class="card-body">
