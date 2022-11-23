@@ -39,8 +39,8 @@
                     <th>ptsi2</th>
                     <th>ptsab</th>
 
-                    <th>Ap3</th>
-                    <th>Ap4</th>
+                    <th><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/640px-Flag_of_Germany.svg.png" width="50px" alt=""></th>
+                    <th><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/200px-Flag_of_Japan.svg.png" width="50px" alt=""></th>
                     <th>res3</th>
                     <th>res4</th>
                     <th>ptsg</th>
@@ -48,8 +48,8 @@
                     <th>ptsi2</th>
                     <th>ptsab</th>
 
-                    <th>Ap5</th>
-                    <th>Ap6</th>
+                    <th><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/1200px-Bandera_de_Espa%C3%B1a.svg.png" width="50px" alt=""></th>
+                    <th><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flag_of_Costa_Rica.svg/2560px-Flag_of_Costa_Rica.svg.png" width="50px" alt=""></th>
                     <th>res5</th>
                     <th>res6</th>
                     <th>ptsg</th>
@@ -57,8 +57,8 @@
                     <th>ptsi2</th>
                     <th>ptsab</th>
 
-                    <th>Ap7</th>
-                    <th>Ap8</th>
+                    <th><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Flag_of_Belgium_%28civil%29.svg/1200px-Flag_of_Belgium_%28civil%29.svg.png" width="50px" alt=""></th>
+                    <th><img src="https://static.vecteezy.com/system/resources/previews/001/218/820/non_2x/illustration-of-canada-flag-vector.jpg" width="50px" alt=""></th>
                     <th>res7</th>
                     <th>res8</th>
                     <th>ptsg</th>
