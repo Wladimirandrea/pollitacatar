@@ -30,8 +30,8 @@
             <table class="table table-bordered">
                 <tr>
                     <th>Name</th>
-                    <th style="width: 50px">https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_Morocco.svg/200px-Flag_of_Morocco.svg.png</th>
-                    <th style="width: 50px">https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_Croatia.svg/1280px-Flag_of_Croatia.svg.png</th>
+                    <th><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_Morocco.svg/200px-Flag_of_Morocco.svg.png" width="50px" alt=""></th>
+                    <th><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Flag_of_Croatia.svg/1280px-Flag_of_Croatia.svg.png" width="50px" alt=""></th>
                     <th>res1</th>
                     <th>res2</th>
                     <th>ptsg</th>
