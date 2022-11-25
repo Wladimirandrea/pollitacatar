@@ -76,7 +76,7 @@
 
             <div class="form-group">
 
-                <strong>resultado3:</strong>
+                <strong>resultado11:</strong>
 
                 <input type="text" name="resultado3" class="form-control" placeholder="resultado1">
 
@@ -116,7 +116,6 @@
             </div>
 
         </div>
-
         <div class="col-xs-12 col-sm-12 col-md-12">
 
             <div class="form-group">
@@ -135,6 +134,95 @@
                 <strong>resultado8:</strong>
 
                 <input type="text" name="resultado8" class="form-control" placeholder="resultado2">
+
+            </div>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12">
+
+            <div class="form-group">
+
+                <strong>resultado9:</strong>
+
+                <input type="text" name="resultado9" class="form-control" placeholder="resultado1">
+
+            </div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+
+            <div class="form-group">
+
+                <strong>resultado10:</strong>
+
+                <input type="text" name="resultado10" class="form-control" placeholder="resultado10">
+
+            </div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+
+            <div class="form-group">
+
+                <strong>resultado11:</strong>
+
+                <input type="text" name="resultado11" class="form-control" placeholder="resultado1">
+
+            </div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+
+            <div class="form-group">
+
+                <strong>resultado12:</strong>
+
+                <input type="text" name="resultado12" class="form-control" placeholder="resultado2">
+
+            </div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+
+            <div class="form-group">
+
+                <strong>resultado13:</strong>
+
+                <input type="text" name="resultado13" class="form-control" placeholder="resultado1">
+
+            </div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+
+            <div class="form-group">
+
+                <strong>resultado14:</strong>
+
+                <input type="text" name="resultado14" class="form-control" placeholder="resultado2">
+
+            </div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+
+            <div class="form-group">
+
+                <strong>resultado15:</strong>
+
+                <input type="text" name="resultado15" class="form-control" placeholder="resultado1">
+
+            </div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+
+            <div class="form-group">
+
+                <strong>resultado16:</strong>
+
+                <input type="text" name="resultado16" class="form-control" placeholder="resultado2">
 
             </div>
 

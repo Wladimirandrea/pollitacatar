@@ -1,4 +1,687 @@
-<div class="container">
+@extends('layouts.master')
+
+@section('content')
+<div class="tab-content" id="nav-tabContent">
+    <!-- PRINCIPAL -->
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+      <div class="apuesta-resultado">
+        <div class="botones-juegos">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <img src="img/btn1.png" alt="" id="pills-juego1-tab" data-bs-toggle="pill" data-bs-target="#pills-juego1" type="button" role="tab" aria-controls="pills-juego1" aria-selected="true">
+            </li>
+            <li class="nav-item" role="presentation">
+              <img src="img/btn2.png" id="pills-juego2-tab" data-bs-toggle="pill" data-bs-target="#pills-juego2" type="button" role="tab" aria-controls="pills-juego2" aria-selected="false">
+            </li>
+            <li class="nav-item" role="presentation">
+              <img src="img/btn3.png" id="pills-juego3-tab" data-bs-toggle="pill" data-bs-target="#pills-juego3" type="button" role="tab" aria-controls="pills-juego3" aria-selected="false">
+            </li>
+            <li class="nav-item" role="presentation">
+              <img src="img/btn4.png" alt="" id="pills-juego4-tab" data-bs-toggle="pill" data-bs-target="#pills-juego4" type="button" role="tab" aria-controls="pills-juego4" aria-selected="true">
+            </li>
+            <li class="nav-item" role="presentation">
+              <img src="img/btn5.png" id="pills-juego5-tab" data-bs-toggle="pill" data-bs-target="#pills-juego5" type="button" role="tab" aria-controls="pills-juego5" aria-selected="false">
+            </li>
+            <li class="nav-item" role="presentation">
+              <img src="img/btn6.png" id="pills-juego6-tab" data-bs-toggle="pill" data-bs-target="#pills-juego6" type="button" role="tab" aria-controls="pills-juego6" aria-selected="false">
+            </li>
+            <li class="nav-item" role="presentation">
+              <img src="img/btn7.png" id="pills-juego7-tab" data-bs-toggle="pill" data-bs-target="#pills-juego7" type="button" role="tab" aria-controls="pills-juego7" aria-selected="false">
+            </li>
+            <li class="nav-item" role="presentation">
+              <img src="img/btn8.png" id="pills-juego8-tab" data-bs-toggle="pill" data-bs-target="#pills-juego8" type="button" role="tab" aria-controls="pills-juego8" aria-selected="false">
+            </li>
+
+
+          </ul>
+        </div>
+
+        <div class="resultados">
+            <a href="{{url('apuestas/create')}}" class="btn btn-success float-left">Apostar</a>
+
+          <div class="tab-content" id="pills-tabContent">
+            <!-- Juego1 -->
+            <div class="tab-pane fade show active" id="pills-juego1" role="tabpanel" aria-labelledby="pills-juego1-tab" tabindex="0">
+              <div class="container-fit">
+                @foreach ($apuestas as $apuesta)
+                    <div class="carta">
+                    <div class="nombre">{{ $apuesta->name }}</div>
+                    <div class="carta-apuesta">
+                        <div class="carta-resultado">
+                        <div class="title">Resultado</div>
+                        <div class="marcador">
+                            <div>{{ $apuesta->resultados->resultado1 }}</div>
+                            <div>{{ $apuesta->resultados->resultado2 }}</div>
+                        </div>
+                        <div class="imagenes-equipos">
+                            <div><img src="img/tunez.png" alt=""></div>
+                            <div>vs</div>
+                            <div><img src="img/australia.png" alt=""></div>
+                        </div>
+                        <div class="marcador">
+                            <div>{{ $apuesta->apuesta1 }}</div>
+                            <div>{{ $apuesta->apuesta2 }}</div>
+                        </div>
+                        <div class="title">Apuesta</div>
+                        <div class="total">{{ $apuesta->total }}</div>
+                        <div class="pts-g">{{ $apuesta->ptsg }}</div>
+                        <div class="pts-i1">{{ $apuesta->ptsi1 }}</div>
+                        <div class="pts-i2">{{ $apuesta->ptsi2 }}</div>
+                        <div class="pts-ab">{{ $apuesta->ptsab }}</div>
+                        </div>
+                    </div>
+                    </div>
+                @endforeach
+
+
+              </div>
+            </div>
+            <!-- Juego2 -->
+            <div class="tab-pane fade" id="pills-juego2" role="tabpanel" aria-labelledby="pills-juego2-tab" tabindex="0">
+                <div class="container-fit">
+                    @foreach ($apuestas as $apuesta)
+                        <div class="carta">
+                        <div class="nombre">{{ $apuesta->name }}</div>
+                        <div class="carta-apuesta">
+                            <div class="carta-resultado">
+                            <div class="title">Resultado</div>
+                            <div class="marcador">
+                                <div>{{ $apuesta->resultados->resultado3 }}</div>
+                                <div>{{ $apuesta->resultados->resultado4 }}</div>
+                            </div>
+                            <div class="imagenes-equipos">
+                                <div><img src="img/tunez.png" alt=""></div>
+                                <div>vs</div>
+                                <div><img src="img/australia.png" alt=""></div>
+                            </div>
+                            <div class="marcador">
+                                <div>{{ $apuesta->apuesta3 }}</div>
+                                <div>{{ $apuesta->apuesta4 }}</div>
+                            </div>
+                            <div class="title">Apuesta</div>
+                            <div class="total">{{ $apuesta->total }}</div>
+                            <div class="pts-g">{{ $apuesta->ptsg2 }}</div>
+                            <div class="pts-i1">{{ $apuesta->ptsi3 }}</div>
+                            <div class="pts-i2">{{ $apuesta->ptsi4 }}</div>
+                            <div class="pts-ab">{{ $apuesta->ptsab2 }}</div>
+                            </div>
+                        </div>
+                        </div>
+                    @endforeach
+
+
+                  </div>
+            </div>
+            <!-- Juego3 -->
+            <div class="tab-pane fade" id="pills-juego3" role="tabpanel" aria-labelledby="pills-juego3-tab" tabindex="0">
+                <div class="container-fit">
+                    @foreach ($apuestas as $apuesta)
+                        <div class="carta">
+                        <div class="nombre">{{ $apuesta->name }}</div>
+                        <div class="carta-apuesta">
+                            <div class="carta-resultado">
+                            <div class="title">Resultado</div>
+                            <div class="marcador">
+                                <div>{{ $apuesta->resultados->resultado5 }}</div>
+                                <div>{{ $apuesta->resultados->resultado6 }}</div>
+                            </div>
+                            <div class="imagenes-equipos">
+                                <div><img src="img/tunez.png" alt=""></div>
+                                <div>vs</div>
+                                <div><img src="img/australia.png" alt=""></div>
+                            </div>
+                            <div class="marcador">
+                                <div>{{ $apuesta->apuesta5 }}</div>
+                                <div>{{ $apuesta->apuesta6 }}</div>
+                            </div>
+                            <div class="title">Apuesta</div>
+                            <div class="total">{{ $apuesta->total }}</div>
+                            <div class="pts-g">{{ $apuesta->ptsg3 }}</div>
+                            <div class="pts-i1">{{ $apuesta->ptsi5 }}</div>
+                            <div class="pts-i2">{{ $apuesta->ptsi6 }}</div>
+                            <div class="pts-ab">{{ $apuesta->ptsab3 }}</div>
+                            </div>
+                        </div>
+                        </div>
+                    @endforeach
+
+
+                  </div>
+            </div>
+            <!-- Juego4 -->
+            <div class="tab-pane fade" id="pills-juego4" role="tabpanel" aria-labelledby="pills-juego4-tab" tabindex="0">
+                <div class="container-fit">
+                    @foreach ($apuestas as $apuesta)
+                        <div class="carta">
+                        <div class="nombre">{{ $apuesta->name }}</div>
+                        <div class="carta-apuesta">
+                            <div class="carta-resultado">
+                            <div class="title">Resultado</div>
+                            <div class="marcador">
+                                <div>{{ $apuesta->resultados->resultado7 }}</div>
+                                <div>{{ $apuesta->resultados->resultado8 }}</div>
+                            </div>
+                            <div class="imagenes-equipos">
+                                <div><img src="img/tunez.png" alt=""></div>
+                                <div>vs</div>
+                                <div><img src="img/australia.png" alt=""></div>
+                            </div>
+                            <div class="marcador">
+                                <div>{{ $apuesta->apuesta7 }}</div>
+                                <div>{{ $apuesta->apuesta8 }}</div>
+                            </div>
+                            <div class="title">Apuesta</div>
+                            <div class="total">{{ $apuesta->total }}</div>
+                            <div class="pts-g">{{ $apuesta->ptsg4 }}</div>
+                            <div class="pts-i1">{{ $apuesta->ptsi7 }}</div>
+                            <div class="pts-i2">{{ $apuesta->ptsi8 }}</div>
+                            <div class="pts-ab">{{ $apuesta->ptsab4 }}</div>
+                            </div>
+                        </div>
+                        </div>
+                    @endforeach
+
+
+                  </div>
+            </div>
+            <!-- Juego5 -->
+            <div class="tab-pane fade" id="pills-juego5" role="tabpanel" aria-labelledby="pills-juego5-tab" tabindex="0">
+                <div class="container-fit">
+                    @foreach ($apuestas as $apuesta)
+                        <div class="carta">
+                        <div class="nombre">{{ $apuesta->name }}</div>
+                        <div class="carta-apuesta">
+                            <div class="carta-resultado">
+                            <div class="title">Resultado</div>
+                            <div class="marcador">
+                                <div>{{ $apuesta->resultados->resultado9 }}</div>
+                                <div>{{ $apuesta->resultados->resultado10 }}</div>
+                            </div>
+                            <div class="imagenes-equipos">
+                                <div><img src="img/tunez.png" alt=""></div>
+                                <div>vs</div>
+                                <div><img src="img/australia.png" alt=""></div>
+                            </div>
+                            <div class="marcador">
+                                <div>{{ $apuesta->apuesta9 }}</div>
+                                <div>{{ $apuesta->apuesta10 }}</div>
+                            </div>
+                            <div class="title">Apuesta</div>
+                            <div class="total">{{ $apuesta->total }}</div>
+                            <div class="pts-g">{{ $apuesta->ptsg5 }}</div>
+                            <div class="pts-i1">{{ $apuesta->ptsi9 }}</div>
+                            <div class="pts-i2">{{ $apuesta->ptsi10 }}</div>
+                            <div class="pts-ab">{{ $apuesta->ptsab5 }}</div>
+                            </div>
+                        </div>
+                        </div>
+                    @endforeach
+
+
+                  </div>
+            </div>
+            <!-- Juego6 -->
+            <div class="tab-pane fade" id="pills-juego6" role="tabpanel" aria-labelledby="pills-juego6-tab" tabindex="0">
+                <div class="container-fit">
+                    @foreach ($apuestas as $apuesta)
+                        <div class="carta">
+                        <div class="nombre">{{ $apuesta->name }}</div>
+                        <div class="carta-apuesta">
+                            <div class="carta-resultado">
+                            <div class="title">Resultado</div>
+                            <div class="marcador">
+                                <div>{{ $apuesta->resultados->resultado11 }}</div>
+                                <div>{{ $apuesta->resultados->resultado12 }}</div>
+                            </div>
+                            <div class="imagenes-equipos">
+                                <div><img src="img/tunez.png" alt=""></div>
+                                <div>vs</div>
+                                <div><img src="img/australia.png" alt=""></div>
+                            </div>
+                            <div class="marcador">
+                                <div>{{ $apuesta->apuesta11 }}</div>
+                                <div>{{ $apuesta->apuesta12 }}</div>
+                            </div>
+                            <div class="title">Apuesta</div>
+                            <div class="total">{{ $apuesta->total }}</div>
+                            <div class="pts-g">{{ $apuesta->ptsg6 }}</div>
+                            <div class="pts-i1">{{ $apuesta->ptsi11 }}</div>
+                            <div class="pts-i2">{{ $apuesta->ptsi12 }}</div>
+                            <div class="pts-ab">{{ $apuesta->ptsab6 }}</div>
+                            </div>
+                        </div>
+                        </div>
+                    @endforeach
+
+
+                  </div>
+            </div>
+            <!-- Juego7 -->
+            <div class="tab-pane fade" id="pills-juego7" role="tabpanel" aria-labelledby="pills-juego7-tab" tabindex="0">
+                <div class="container-fit">
+                    @foreach ($apuestas as $apuesta)
+                        <div class="carta">
+                        <div class="nombre">{{ $apuesta->name }}</div>
+                        <div class="carta-apuesta">
+                            <div class="carta-resultado">
+                            <div class="title">Resultado</div>
+                            <div class="marcador">
+                                <div>{{ $apuesta->resultados->resultado13 }}</div>
+                                <div>{{ $apuesta->resultados->resultado14 }}</div>
+                            </div>
+                            <div class="imagenes-equipos">
+                                <div><img src="img/tunez.png" alt=""></div>
+                                <div>vs</div>
+                                <div><img src="img/australia.png" alt=""></div>
+                            </div>
+                            <div class="marcador">
+                                <div>{{ $apuesta->apuesta13 }}</div>
+                                <div>{{ $apuesta->apuesta14 }}</div>
+                            </div>
+                            <div class="title">Apuesta</div>
+                            <div class="total">{{ $apuesta->total }}</div>
+                            <div class="pts-g">{{ $apuesta->ptsg7 }}</div>
+                            <div class="pts-i1">{{ $apuesta->ptsi13 }}</div>
+                            <div class="pts-i2">{{ $apuesta->ptsi14 }}</div>
+                            <div class="pts-ab">{{ $apuesta->ptsab7 }}</div>
+                            </div>
+                        </div>
+                        </div>
+                    @endforeach
+
+
+                  </div>
+            </div>
+            <!-- Juego8 -->
+            <div class="tab-pane fade" id="pills-juego8" role="tabpanel" aria-labelledby="pills-juego8-tab" tabindex="0">
+                <div class="container-fit">
+                    @foreach ($apuestas as $apuesta)
+                        <div class="carta">
+                        <div class="nombre">{{ $apuesta->name }}</div>
+                        <div class="carta-apuesta">
+                            <div class="carta-resultado">
+                            <div class="title">Resultado</div>
+                            <div class="marcador">
+                                <div>{{ $apuesta->resultados->resultado15 }}</div>
+                                <div>{{ $apuesta->resultados->resultado16 }}</div>
+                            </div>
+                            <div class="imagenes-equipos">
+                                <div><img src="img/tunez.png" alt=""></div>
+                                <div>vs</div>
+                                <div><img src="img/australia.png" alt=""></div>
+                            </div>
+                            <div class="marcador">
+                                <div>{{ $apuesta->apuesta15 }}</div>
+                                <div>{{ $apuesta->apuesta16 }}</div>
+                            </div>
+                            <div class="title">Apuesta</div>
+                            <div class="total">{{ $apuesta->total }}</div>
+                            <div class="pts-g">{{ $apuesta->ptsg8 }}</div>
+                            <div class="pts-i1">{{ $apuesta->ptsi15 }}</div>
+                            <div class="pts-i2">{{ $apuesta->ptsi16 }}</div>
+                            <div class="pts-ab">{{ $apuesta->ptsab8 }}</div>
+                            </div>
+                        </div>
+                        </div>
+                    @endforeach
+
+
+                  </div>
+            </div>
+
+          </div>
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+    <!-- CREAR APUESTAS -->
+    <div class="tab-pane fade table-posicion" id="nav-apuesta" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <div class="pos">
+            <table class="table table-dark table-hover text-center">
+                <thead>
+                  <tr>
+                    <th>#</th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>1</th>
+                  </tr>
+                  <tr>
+                    <th>2</th>
+                  </tr>
+                  <tr>
+                    <th>3</th>
+                  </tr>
+                  <tr>
+                    <th>4</th>
+                  </tr>
+                  <tr>
+                    <th>5</th>
+                  </tr>
+                  <tr>
+                    <th>6</th>
+                  </tr>
+                  <tr>
+                    <th>7</th>
+                  </tr>
+                  <tr>
+                    <th>8</th>
+                  </tr>
+                  <tr>
+                    <th>9</th>
+                  </tr>
+                  <tr>
+                    <th>10</th>
+                  </tr>
+                  <tr>
+                    <th>11</th>
+                  </tr>
+                  <tr>
+                    <th>12</th>
+                  </tr>
+                  <tr>
+                    <th>13</th>
+                  </tr>
+                  <tr>
+                    <th>14</th>
+                  </tr>
+                  <tr>
+                    <th>15</th>
+                  </tr>
+                  <tr>
+                    <th>16</th>
+                  </tr>
+                  <tr>
+                    <th>17</th>
+                  </tr>
+                  <tr>
+                    <th>18</th>
+                  </tr>
+                  <tr>
+                    <th>19</th>
+                  </tr>
+                  <tr>
+                    <th>20</th>
+                  </tr>
+                  <tr>
+                    <th>21</th>
+                  </tr>
+                  <tr>
+                    <th>22</th>
+                  </tr>
+                  <tr>
+                    <th>23</th>
+                  </tr>
+                  <tr>
+                    <th>24</th>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tabla">
+            <table class="table text-center table-dark table-hover">
+                <thead>
+                  <tr>
+                    <th>Nombre</th>
+
+                    <th>Puntos</th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- POSICIONES -->
+    <div class="tab-pane fade table-posicion" id="nav-posicion" role="tabpanel" aria-labelledby="nav-posicion-tab">
+        <div class="pos">
+            <table class="table table-dark table-hover text-center">
+                <thead>
+                  <tr>
+                    <th>#</th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>1</th>
+                  </tr>
+                  <tr>
+                    <th>2</th>
+                  </tr>
+                  <tr>
+                    <th>3</th>
+                  </tr>
+                  <tr>
+                    <th>4</th>
+                  </tr>
+                  <tr>
+                    <th>5</th>
+                  </tr>
+                  <tr>
+                    <th>6</th>
+                  </tr>
+                  <tr>
+                    <th>7</th>
+                  </tr>
+                  <tr>
+                    <th>8</th>
+                  </tr>
+                  <tr>
+                    <th>9</th>
+                  </tr>
+                  <tr>
+                    <th>10</th>
+                  </tr>
+                  <tr>
+                    <th>11</th>
+                  </tr>
+                  <tr>
+                    <th>12</th>
+                  </tr>
+                  <tr>
+                    <th>13</th>
+                  </tr>
+                  <tr>
+                    <th>14</th>
+                  </tr>
+                  <tr>
+                    <th>15</th>
+                  </tr>
+                  <tr>
+                    <th>16</th>
+                  </tr>
+                  <tr>
+                    <th>17</th>
+                  </tr>
+                  <tr>
+                    <th>18</th>
+                  </tr>
+                  <tr>
+                    <th>19</th>
+                  </tr>
+                  <tr>
+                    <th>20</th>
+                  </tr>
+                  <tr>
+                    <th>21</th>
+                  </tr>
+                  <tr>
+                    <th>22</th>
+                  </tr>
+                  <tr>
+                    <th>23</th>
+                  </tr>
+                  <tr>
+                    <th>24</th>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="tabla">
+            <table class="table text-center table-dark table-hover">
+                <thead>
+                  <tr>
+                    <th>Nombre</th>
+
+                    <th>Puntos</th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                  <tr>
+                    <td>pedro</td>
+                    <td>20</td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- cerrar sesion -->
+    <div class="tab-pane fade" id="nav-sesion" role="tabpanel" aria-labelledby="nav-sesion-tab">cerrar sesion</div>
+  </div>
+@endsection
+{{-- <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -123,3 +806,4 @@
         </div>
     </div>
 </div>
+ --}}

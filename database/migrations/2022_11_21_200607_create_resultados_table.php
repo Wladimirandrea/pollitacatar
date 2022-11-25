@@ -23,6 +23,14 @@ return new class extends Migration
             $table->string('resultado6')->nullable();
             $table->string('resultado7')->nullable();
             $table->string('resultado8')->nullable();
+            $table->string('resultado9')->nullable();
+            $table->string('resultado10')->nullable();
+            $table->string('resultado11')->nullable();
+            $table->string('resultado12')->nullable();
+            $table->string('resultado13')->nullable();
+            $table->string('resultado14')->nullable();
+            $table->string('resultado15')->nullable();
+            $table->string('resultado16')->nullable();
             $table->timestamps();
         });
     }

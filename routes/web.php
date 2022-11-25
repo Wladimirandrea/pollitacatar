@@ -16,9 +16,10 @@ use App\Http\Controllers\ResultadoController;
 |
 */
 
+
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::resource('apuestas', ApuestaController::class);
 Route::resource('resultados', ResultadoController::class);

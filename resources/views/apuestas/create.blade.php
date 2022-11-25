@@ -1,4 +1,72 @@
-<div class="container">
+@extends('layouts.master')
+
+@section('apuestas')
+<a href="{{url('apuestas')}}" class="btn btn-success float-left">Regresar</a>
+<form action="{{ route('apuestas.store') }}" method="POST">
+    @csrf
+    <div class="form-apuesta">
+        <div class="tarjeta">
+            <img src="img/tunez.png" alt="">
+            <h5>VS</h5>
+            <img src="img/australia.png" alt="">
+            <input type="number" name="apuesta1" class="inmarca">
+            <input type="number" name="apuesta2" class="inmarca2">
+        </div>
+        <div class="tarjeta">
+        <img src="img/polonoa.png" alt="">
+        <h5>VS</h5>
+        <img src="img/arabia.png" alt="">
+        <input type="number" name="apuesta3" class="inmarca">
+        <input type="number" name="apuesta4" class="inmarca2">
+        </div>
+        <div class="tarjeta">
+            <img src="img/francia.png" alt="">
+            <h5>VS</h5>
+            <img src="img/dinamarca.png" alt="">
+            <input type="number" name="apuesta5" class="inmarca">
+            <input type="number" name="apuesta6" class="inmarca2">
+        </div>
+        <div class="tarjeta">
+            <img src="img/argetina.png" alt="">
+            <h5>VS</h5>
+            <img src="img/mexico.png" alt="">
+            <input type="number" name="apuesta7" class="inmarca">
+            <input type="number" name="apuesta8" class="inmarca2">
+        </div>
+        <div class="tarjeta">
+            <img src="img/japon.png" alt="">
+            <h5>VS</h5>
+            <img src="img/costarica.png" alt="">
+            <input type="number" name="apuesta9" class="inmarca">
+            <input type="number" name="apuesta10" class="inmarca2">
+        </div>
+        <div class="tarjeta">
+            <img src="img/belgica.png" alt="">
+            <h5>VS</h5>
+            <img src="img/marruecos.png" alt="">
+            <input type="number" name="apuesta11" class="inmarca">
+            <input type="number" name="apuesta12" class="inmarca2">
+        </div>
+        <div class="tarjeta">
+            <img src="img/croacia.png" alt="">
+            <h5>VS</h5>
+            <img src="img/canada.png" alt="">
+            <input type="number" name="apuesta13" class="inmarca">
+            <input type="number" name="apuesta14" class="inmarca2">
+        </div>
+        <div class="tarjeta">
+            <img src="img/españa.png" alt="">
+            <h5>VS</h5>
+            <img src="img/alemania.png" alt="">
+            <input type="number" name="apuesta15" class="inmarca">
+            <input type="number" name="apuesta16" class="inmarca2">
+            <input type="hidden" name="id_resultado" value="1" class="form-control" placeholder="Name">
+        </div>
+        <button type="submit" class="btn btn-primary">Apostar</button>
+    </div>
+</form>
+@endsection
+{{-- <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -151,3 +219,4 @@
     </div>
 
 </div>
+ --}}

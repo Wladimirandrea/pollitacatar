@@ -149,6 +149,102 @@
 
             </div>
 
+            <div class="col-xs-12 col-sm-12 col-md-12">
+
+                <div class="form-group">
+
+                    <strong>Name:</strong>
+
+                    <input type="text" name="resultado9" value="{{ $resultado->resultado9 }}" class="form-control" placeholder="Name">
+
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12">
+
+                <div class="form-group">
+
+                    <strong>Name:</strong>
+
+                    <input type="text" name="resultado10" value="{{ $resultado->resultado10 }}" class="form-control" placeholder="Name">
+
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12">
+
+                <div class="form-group">
+
+                    <strong>Name:</strong>
+
+                    <input type="text" name="resultado11" value="{{ $resultado->resultado11 }}" class="form-control" placeholder="Name">
+
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12">
+
+                <div class="form-group">
+
+                    <strong>Name:</strong>
+
+                    <input type="text" name="resultado12" value="{{ $resultado->resultado12 }}" class="form-control" placeholder="Name">
+
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12">
+
+                <div class="form-group">
+
+                    <strong>Name:</strong>
+
+                    <input type="text" name="resultado13" value="{{ $resultado->resultado13 }}" class="form-control" placeholder="Name">
+
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12">
+
+                <div class="form-group">
+
+                    <strong>Name:</strong>
+
+                    <input type="text" name="resultado14" value="{{ $resultado->resultado14 }}" class="form-control" placeholder="Name">
+
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12">
+
+                <div class="form-group">
+
+                    <strong>Name:</strong>
+
+                    <input type="text" name="resultado15" value="{{ $resultado->resultado15 }}" class="form-control" placeholder="Name">
+
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12">
+
+                <div class="form-group">
+
+                    <strong>Name:</strong>
+
+                    <input type="text" name="resultado16" value="{{ $resultado->resultado16 }}" class="form-control" placeholder="Name">
+
+                </div>
+
+            </div>
+
 
 
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
