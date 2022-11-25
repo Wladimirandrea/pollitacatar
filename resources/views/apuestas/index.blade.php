@@ -54,9 +54,9 @@
                             <div>{{ $apuesta->resultados->resultado2 }}</div>
                         </div>
                         <div class="imagenes-equipos">
-                            <div><img src="img/tunez.png" alt=""></div>
+                            <div><img src="{{asset('img/tunez.png')}}" alt=""></div>
                             <div>vs</div>
-                            <div><img src="img/australia.png" alt=""></div>
+                            <div><img src="{{asset('img/australia.png')}}" alt=""></div>
                         </div>
                         <div class="marcador">
                             <div>{{ $apuesta->apuesta1 }}</div>
@@ -90,9 +90,9 @@
                                 <div>{{ $apuesta->resultados->resultado4 }}</div>
                             </div>
                             <div class="imagenes-equipos">
-                                <div><img src="img/tunez.png" alt=""></div>
+                                <div><img src="{{asset('img/polonia.png')}}" alt=""></div>
                                 <div>vs</div>
-                                <div><img src="img/australia.png" alt=""></div>
+                                <div><img src="{{asset('img/arabia.png')}}" alt=""></div>
                             </div>
                             <div class="marcador">
                                 <div>{{ $apuesta->apuesta3 }}</div>
