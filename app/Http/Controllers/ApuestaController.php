@@ -507,7 +507,7 @@ class ApuestaController extends Controller
             $apuesta->ptsi11 = $puntos11;
             $apuesta->ptsi12 = $puntos12;
             $apuesta->ptsi13 = $puntos13;
-            $apuesta->ptsi16 = $puntos16;
+            $apuesta->ptsi14 = $puntos14;
             $apuesta->ptsi15 = $puntos15;
             $apuesta->ptsi16 = $puntos16;
 
