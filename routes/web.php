@@ -17,12 +17,23 @@ use App\Http\Controllers\ResultadoController;
 */
 
 
-Route::get('/dashboard', function () {
+/* Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
-
+ */
+Route::get('/', function () {
+    return view('auth.login');
+});
 Route::resource('apuestas', ApuestaController::class);
 Route::resource('resultados', ResultadoController::class);
+
+Route::middleware('auth')->group(function () {
+    Route::resource('apuestas', ApuestaController::class);
+    Route::resource('resultados', ResultadoController::class);
+
+});
+
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');

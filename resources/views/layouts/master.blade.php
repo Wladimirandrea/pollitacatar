@@ -76,6 +76,19 @@
                 <div class="navbar__logo">
                     <img src="https://i.ibb.co/q7ynBM3/Qatar2022-removebg-preview.png" alt="Qatar2022-removebg-preview" border="0">
                 </div>
+                <div class="logout">
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+
+                        <x-dropdown-link :href="route('logout')"
+                                onclick="event.preventDefault();
+                                            this.closest('form').submit(); ">
+                            <i class="fa-solid fa-power-off"></i>
+                        </x-dropdown-link>
+
+                    </form>
+
+                </div>
             </div>
         </div>
         <!-- Contenido -->
