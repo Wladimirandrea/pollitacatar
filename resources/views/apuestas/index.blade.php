@@ -339,346 +339,85 @@
         </div>
       </div>
     </div>
-    <!-- CREAR APUESTAS -->
-    <div class="tab-pane fade table-posicion" id="nav-apuesta" role="tabpanel" aria-labelledby="nav-profile-tab">
-        <div class="pos">
-            <table class="table table-dark table-hover text-center">
-                <thead>
-                  <tr>
-                    <th>#</th>
+    <!-- apuestas -->
+    <div class="tab-pane fade show" id="nav-apuesta" role="tabpanel" aria-labelledby="nav-apuesta-tab">
+        <table class="table table-dark table-hover text-center">
+            <thead>
+              <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col"><img src="{{asset('img/japon.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/costarica.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/belgica.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/marruecos.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/croacia.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/canada.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/españa.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/alemania.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/camerun.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/serbia.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/corea.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/ghana.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/brazil.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/suiza.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/portugal.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/uruguay.png')}}" width="30px" alt=""></th>
 
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th>1</th>
-                  </tr>
-                  <tr>
-                    <th>2</th>
-                  </tr>
-                  <tr>
-                    <th>3</th>
-                  </tr>
-                  <tr>
-                    <th>4</th>
-                  </tr>
-                  <tr>
-                    <th>5</th>
-                  </tr>
-                  <tr>
-                    <th>6</th>
-                  </tr>
-                  <tr>
-                    <th>7</th>
-                  </tr>
-                  <tr>
-                    <th>8</th>
-                  </tr>
-                  <tr>
-                    <th>9</th>
-                  </tr>
-                  <tr>
-                    <th>10</th>
-                  </tr>
-                  <tr>
-                    <th>11</th>
-                  </tr>
-                  <tr>
-                    <th>12</th>
-                  </tr>
-                  <tr>
-                    <th>13</th>
-                  </tr>
-                  <tr>
-                    <th>14</th>
-                  </tr>
-                  <tr>
-                    <th>15</th>
-                  </tr>
-                  <tr>
-                    <th>16</th>
-                  </tr>
-                  <tr>
-                    <th>17</th>
-                  </tr>
-                  <tr>
-                    <th>18</th>
-                  </tr>
-                  <tr>
-                    <th>19</th>
-                  </tr>
-                  <tr>
-                    <th>20</th>
-                  </tr>
-                  <tr>
-                    <th>21</th>
-                  </tr>
-                  <tr>
-                    <th>22</th>
-                  </tr>
-                  <tr>
-                    <th>23</th>
-                  </tr>
-                  <tr>
-                    <th>24</th>
-                  </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="tabla">
-            <table class="table text-center table-dark table-hover">
-                <thead>
-                  <tr>
-                    <th>Nombre</th>
+              </tr>
+            </thead>
+            <tbody>
+                @foreach ($apuestas as $apuesta)
+                    <tr>
+                        <td>{{ $apuesta->name }}</td>
+                        <td>{{ $apuesta->apuesta1 }}</td>
+                        <td>{{ $apuesta->apuesta2 }}</td>
+                        <td>{{ $apuesta->apuesta3 }}</td>
+                        <td>{{ $apuesta->apuesta4 }}</td>
+                        <td>{{ $apuesta->apuesta5 }}</td>
+                        <td>{{ $apuesta->apuesta6 }}</td>
+                        <td>{{ $apuesta->apuesta7 }}</td>
+                        <td>{{ $apuesta->apuesta8 }}</td>
+                        <td>{{ $apuesta->apuesta9 }}</td>
+                        <td>{{ $apuesta->apuesta10 }}</td>
+                        <td>{{ $apuesta->apuesta11 }}</td>
+                        <td>{{ $apuesta->apuesta12 }}</td>
+                        <td>{{ $apuesta->apuesta13 }}</td>
+                        <td>{{ $apuesta->apuesta14 }}</td>
+                        <td>{{ $apuesta->apuesta15 }}</td>
+                        <td>{{ $apuesta->apuesta16 }}</td>
 
-                    <th>Puntos</th>
+                    </tr>
 
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                </tbody>
-            </table>
-        </div>
+                @endforeach
+
+
+
+            </tbody>
+        </table>
     </div>
-    <!-- POSICIONES -->
-    <div class="tab-pane fade table-posicion" id="nav-posicion" role="tabpanel" aria-labelledby="nav-posicion-tab">
-        <div class="pos">
-            <table class="table table-dark table-hover text-center">
-                <thead>
-                  <tr>
-                    <th>#</th>
+    <!-- posiciones -->
+    <div class="tab-pane fade show" id="nav-posicion" role="tabpanel" aria-labelledby="nav-posicion-tab">
+        <table class="table table-dark table-hover text-center">
+            <thead>
+              <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Total</th>
 
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th>1</th>
-                  </tr>
-                  <tr>
-                    <th>2</th>
-                  </tr>
-                  <tr>
-                    <th>3</th>
-                  </tr>
-                  <tr>
-                    <th>4</th>
-                  </tr>
-                  <tr>
-                    <th>5</th>
-                  </tr>
-                  <tr>
-                    <th>6</th>
-                  </tr>
-                  <tr>
-                    <th>7</th>
-                  </tr>
-                  <tr>
-                    <th>8</th>
-                  </tr>
-                  <tr>
-                    <th>9</th>
-                  </tr>
-                  <tr>
-                    <th>10</th>
-                  </tr>
-                  <tr>
-                    <th>11</th>
-                  </tr>
-                  <tr>
-                    <th>12</th>
-                  </tr>
-                  <tr>
-                    <th>13</th>
-                  </tr>
-                  <tr>
-                    <th>14</th>
-                  </tr>
-                  <tr>
-                    <th>15</th>
-                  </tr>
-                  <tr>
-                    <th>16</th>
-                  </tr>
-                  <tr>
-                    <th>17</th>
-                  </tr>
-                  <tr>
-                    <th>18</th>
-                  </tr>
-                  <tr>
-                    <th>19</th>
-                  </tr>
-                  <tr>
-                    <th>20</th>
-                  </tr>
-                  <tr>
-                    <th>21</th>
-                  </tr>
-                  <tr>
-                    <th>22</th>
-                  </tr>
-                  <tr>
-                    <th>23</th>
-                  </tr>
-                  <tr>
-                    <th>24</th>
-                  </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="tabla">
-            <table class="table text-center table-dark table-hover">
-                <thead>
-                  <tr>
-                    <th>Nombre</th>
 
-                    <th>Puntos</th>
+              </tr>
+            </thead>
+            <tbody>
+                @foreach ($apuestas as $apuesta)
+                    <tr>
+                        <td>{{ $apuesta->name }}</td>
+                        <td>{{ $apuesta->total }}</td>
+                    </tr>
+                @endforeach
 
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                  <tr>
-                    <td>pedro</td>
-                    <td>20</td>
-                  </tr>
-                </tbody>
-            </table>
-        </div>
+
+            </tbody>
+        </table>
     </div>
-    <!-- cerrar sesion -->
-    <div class="tab-pane fade" id="nav-sesion" role="tabpanel" aria-labelledby="nav-sesion-tab">cerrar sesion</div>
+
   </div>
 @endsection
 {{-- <div class="container">
