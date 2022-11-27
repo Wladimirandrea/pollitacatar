@@ -394,6 +394,61 @@
             </tbody>
         </table>
     </div>
+    <!-- Resultados -->
+    <div class="tab-pane fade show" id="nav-resultado" role="tabpanel" aria-labelledby="nav-resultado-tab">
+        <table class="table table-dark table-hover text-center">
+            <thead>
+              <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col"><img src="{{asset('img/japon.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/costarica.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/belgica.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/marruecos.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/croacia.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/canada.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/españa.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/alemania.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/camerun.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/serbia.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/corea.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/ghana.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/brazil.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/suiza.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/portugal.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/uruguay.png')}}" width="30px" alt=""></th>
+
+              </tr>
+            </thead>
+            <tbody>
+                @foreach ($apuestas as $apuesta)
+                    <tr>
+                        <td>{{ $apuesta->name }}</td>
+                        <td>{{ $apuesta->resultados->resultado1 }}</td>
+                        <td>{{ $apuesta->resultados->resultado2 }}</td>
+                        <td>{{ $apuesta->resultados->resultado3 }}</td>
+                        <td>{{ $apuesta->resultados->resultado4 }}</td>
+                        <td>{{ $apuesta->resultados->resultado5 }}</td>
+                        <td>{{ $apuesta->resultados->resultado6 }}</td>
+                        <td>{{ $apuesta->resultados->resultado7 }}</td>
+                        <td>{{ $apuesta->resultados->resultado8 }}</td>
+                        <td>{{ $apuesta->resultados->resultado9 }}</td>
+                        <td>{{ $apuesta->resultados->resultado10 }}</td>
+                        <td>{{ $apuesta->resultados->resultado11 }}</td>
+                        <td>{{ $apuesta->resultados->resultado12 }}</td>
+                        <td>{{ $apuesta->resultados->resultado13 }}</td>
+                        <td>{{ $apuesta->resultados->resultado14 }}</td>
+                        <td>{{ $apuesta->resultados->resultado15 }}</td>
+                        <td>{{ $apuesta->resultados->resultado16 }}</td>
+
+                    </tr>
+
+                @endforeach
+
+
+
+            </tbody>
+        </table>
+    </div>
     <!-- posiciones -->
     <div class="tab-pane fade show" id="nav-posicion" role="tabpanel" aria-labelledby="nav-posicion-tab">
         <table class="table table-dark table-hover text-center">

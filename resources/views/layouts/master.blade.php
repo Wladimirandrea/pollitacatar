@@ -52,19 +52,20 @@
                                         <span class="text">Apuesta</span>
                                     </a>
                                 </li>
-                                <li class="list" id="nav-posicion-tab" data-bs-toggle="tab" data-bs-target="#nav-posicion" type="button" role="tab" aria-controls="nav-apuesta" aria-selected="false">
+                                <li class="list" id="nav-resultado-tab" data-bs-toggle="tab" data-bs-target="#nav-resultado" type="button" role="tab" aria-controls="nav-apuesta" aria-selected="false">
+                                    <a href="#">
+                                        <span class="icon"><i class="fa-solid fa-square-poll-vertical"></i></span>
+                                        <span class="text">Resultados</span>
+                                    </a>
+                                </li>
+                                <li class="list" id="nav-resultado-tab" data-bs-toggle="tab" data-bs-target="#nav-posicion" type="button" role="tab" aria-controls="nav-apuesta" aria-selected="false">
                                     <a href="#">
                                         <span class="icon"><i class="fa-solid fa-ranking-star"></i></span>
                                         <span class="text">Posicion</span>
                                     </a>
                                 </li>
 
-                                <li class="list" id="nav-sesion-tab" data-bs-toggle="tab" data-bs-target="#nav-sesion" type="button" role="tab" aria-controls="nav-posicion" aria-selected="false">
-                                    <a href="#">
-                                        <span class="icon"><i class="fa-solid fa-power-off"></i></span>
-                                        <span class="text">cerrar sesion</span>
-                                    </a>
-                                </li>
+
 
                                 <div class="indicator"></div>
 
