@@ -610,8 +610,9 @@ h5 {
   display: grid;
   place-items: center;
   position: absolute;
-  background: red;
-  top: 210px;
+  background: rgb(190, 211, 3);
+  top: 60px;
+
   left: -10px;
   width: 30px;
   height: 30px;
@@ -622,8 +623,8 @@ h5 {
   display: grid;
   place-items: center;
   position: absolute;
-  background: red;
-  top: 60px;
+  background: rgb(219, 30, 16);
+  top: 210px;
   left: -10px;
   width: 30px;
   height: 30px;
@@ -634,8 +635,8 @@ h5 {
   display: grid;
   place-items: center;
   position: absolute;
-  background: red;
-  top: 60px;
+  background: rgb(85, 84, 83);
+  top: 210px;
   right: -10px;
   width: 30px;
   height: 30px;
@@ -646,8 +647,8 @@ h5 {
   display: grid;
   place-items: center;
   position: absolute;
-  background: red;
-  top: 210px;
+  background: rgb(2, 41, 170);
+  top: 60px;
   right: -10px;
   width: 30px;
   height: 30px;
