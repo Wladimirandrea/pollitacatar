@@ -83,6 +83,9 @@ class ApuestaController extends Controller
             $sumaresultado7 = $apuesta->resultados->resultado13 + $apuesta->resultados->resultado14;
             $sumaequipo8 = $apuesta->apuesta15 + $apuesta->apuesta16;
             $sumaresultado8 = $apuesta->resultados->resultado15 + $apuesta->resultados->resultado16;
+
+
+
 ///////////////////ganador apuesta
 
             //ganador primer juego
@@ -734,12 +737,21 @@ class ApuestaController extends Controller
 
 
 
+            $apuesta->totalj1 = $apuesta->ptsg + $apuesta->ptsi1 + $apuesta->ptsi2 +$apuesta->ptsab;
+            $apuesta->totalj2 = $apuesta->ptsg2 + $apuesta->ptsi3 + $apuesta->ptsi4 +$apuesta->ptsab2;
+            $apuesta->totalj3 = $apuesta->ptsg3 + $apuesta->ptsi5 + $apuesta->ptsi6 +$apuesta->ptsab3;
+            $apuesta->totalj4 = $apuesta->ptsg4 + $apuesta->ptsi7 + $apuesta->ptsi8 +$apuesta->ptsab4;
+            $apuesta->totalj5 = $apuesta->ptsg5 + $apuesta->ptsi9 + $apuesta->ptsi10 +$apuesta->ptsab5;
+            $apuesta->totalj6 = $apuesta->ptsg6 + $apuesta->ptsi11 + $apuesta->ptsi12 +$apuesta->ptsab6;
+            $apuesta->totalj7 = $apuesta->ptsg7 + $apuesta->ptsi13 + $apuesta->ptsi14 +$apuesta->ptsab7;
+            $apuesta->totalj8 = $apuesta->ptsg8 + $apuesta->ptsi15 + $apuesta->ptsi16 +$apuesta->ptsab8;
 
-            $apuesta->total =  $totalganador  +  $totalmarcador +  $totalaltabaja ;
+            $apuesta->total =  $apuesta->totalj1 +  $apuesta->totalj2 +  $apuesta->totalj3 +  $apuesta->totalj4 +  $apuesta->totalj5 +  $apuesta->totalj6 + $apuesta->totalj7 +  $apuesta->totalj8;
             $apuesta->save();
 
         }
-        return view('apuestas.index', compact('apuestas'));
+        $apuestas2 = Apuesta::orderBy('total','DESC')->first();
+        return view('apuestas.index', compact('apuestas', 'apuestas2'));
     }
 
     /**

@@ -8,28 +8,28 @@
         <div class="botones-juegos">
           <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
-              <img src="img/btn1.png" alt="" id="pills-juego1-tab" data-bs-toggle="pill" data-bs-target="#pills-juego1" type="button" role="tab" aria-controls="pills-juego1" aria-selected="true">
+              <img src="{{asset('img/btn1.png')}}" alt="" id="pills-juego1-tab" data-bs-toggle="pill" data-bs-target="#pills-juego1" type="button" role="tab" aria-controls="pills-juego1" aria-selected="true">
             </li>
             <li class="nav-item" role="presentation">
-              <img src="img/btn2.png" id="pills-juego2-tab" data-bs-toggle="pill" data-bs-target="#pills-juego2" type="button" role="tab" aria-controls="pills-juego2" aria-selected="false">
+              <img src="{{asset('img/btn2.png')}}" id="pills-juego2-tab" data-bs-toggle="pill" data-bs-target="#pills-juego2" type="button" role="tab" aria-controls="pills-juego2" aria-selected="false">
             </li>
             <li class="nav-item" role="presentation">
-              <img src="img/btn3.png" id="pills-juego3-tab" data-bs-toggle="pill" data-bs-target="#pills-juego3" type="button" role="tab" aria-controls="pills-juego3" aria-selected="false">
+              <img src="{{asset('img/btn3.png')}}" id="pills-juego3-tab" data-bs-toggle="pill" data-bs-target="#pills-juego3" type="button" role="tab" aria-controls="pills-juego3" aria-selected="false">
             </li>
             <li class="nav-item" role="presentation">
-              <img src="img/btn4.png" alt="" id="pills-juego4-tab" data-bs-toggle="pill" data-bs-target="#pills-juego4" type="button" role="tab" aria-controls="pills-juego4" aria-selected="true">
+              <img src="{{asset('img/btn4.png')}}" alt="" id="pills-juego4-tab" data-bs-toggle="pill" data-bs-target="#pills-juego4" type="button" role="tab" aria-controls="pills-juego4" aria-selected="true">
             </li>
             <li class="nav-item" role="presentation">
-              <img src="img/btn5.png" id="pills-juego5-tab" data-bs-toggle="pill" data-bs-target="#pills-juego5" type="button" role="tab" aria-controls="pills-juego5" aria-selected="false">
+              <img src="{{asset('img/btn5.png')}}" id="pills-juego5-tab" data-bs-toggle="pill" data-bs-target="#pills-juego5" type="button" role="tab" aria-controls="pills-juego5" aria-selected="false">
             </li>
             <li class="nav-item" role="presentation">
-              <img src="img/btn6.png" id="pills-juego6-tab" data-bs-toggle="pill" data-bs-target="#pills-juego6" type="button" role="tab" aria-controls="pills-juego6" aria-selected="false">
+              <img src="{{asset('img/btn6.png')}}" id="pills-juego6-tab" data-bs-toggle="pill" data-bs-target="#pills-juego6" type="button" role="tab" aria-controls="pills-juego6" aria-selected="false">
             </li>
             <li class="nav-item" role="presentation">
-              <img src="img/btn7.png" id="pills-juego7-tab" data-bs-toggle="pill" data-bs-target="#pills-juego7" type="button" role="tab" aria-controls="pills-juego7" aria-selected="false">
+              <img src="{{asset('img/btn7.png')}}" id="pills-juego7-tab" data-bs-toggle="pill" data-bs-target="#pills-juego7" type="button" role="tab" aria-controls="pills-juego7" aria-selected="false">
             </li>
             <li class="nav-item" role="presentation">
-              <img src="img/btn8.png" id="pills-juego8-tab" data-bs-toggle="pill" data-bs-target="#pills-juego8" type="button" role="tab" aria-controls="pills-juego8" aria-selected="false">
+              <img src="{{asset('img/btn8.png')}}" id="pills-juego8-tab" data-bs-toggle="pill" data-bs-target="#pills-juego8" type="button" role="tab" aria-controls="pills-juego8" aria-selected="false">
             </li>
 
 
@@ -54,16 +54,16 @@
                             <div>{{ $apuesta->resultados->resultado2 }}</div>
                         </div>
                         <div class="imagenes-equipos">
-                            <div><img src="{{asset('img/japon.png')}}" alt=""></div>
+                            <div><img src="{{asset('img/ecuador.png')}}" alt=""></div>
                             <div>vs</div>
-                            <div><img src="{{asset('img/costarica.png')}}" alt=""></div>
+                            <div><img src="{{asset('img/senegal.png')}}" alt=""></div>
                         </div>
                         <div class="marcador">
                             <div>{{ $apuesta->apuesta1 }}</div>
                             <div>{{ $apuesta->apuesta2 }}</div>
                         </div>
                         <div class="title">Apuesta</div>
-                        {{-- <div class="total">{{ $apuesta->total }}</div> --}}
+                        <div class="total">{{ $apuesta->totalj1 }}</div>
                         <div class="pts-g">{{ $apuesta->ptsg }}</div>
                         <div class="pts-i1">{{ $apuesta->ptsi1 }}</div>
                         <div class="pts-i2">{{ $apuesta->ptsi2 }}</div>
@@ -90,16 +90,16 @@
                                 <div>{{ $apuesta->resultados->resultado4 }}</div>
                             </div>
                             <div class="imagenes-equipos">
-                                <div><img src="{{asset('img/belgica.png')}}" alt=""></div>
+                                <div><img src="{{asset('img/paises.png')}}" alt=""></div>
                                 <div>vs</div>
-                                <div><img src="{{asset('img/marruecos.png')}}" alt=""></div>
+                                <div><img src="{{asset('img/catar.png')}}" alt=""></div>
                             </div>
                             <div class="marcador">
                                 <div>{{ $apuesta->apuesta3 }}</div>
                                 <div>{{ $apuesta->apuesta4 }}</div>
                             </div>
                             <div class="title">Apuesta</div>
-                            <div class="total">{{ $apuesta->total }}</div>
+                            <div class="total">{{ $apuesta->totalj2}}</div>
                             <div class="pts-g">{{ $apuesta->ptsg2 }}</div>
                             <div class="pts-i1">{{ $apuesta->ptsi3 }}</div>
                             <div class="pts-i2">{{ $apuesta->ptsi4 }}</div>
@@ -126,16 +126,16 @@
                                 <div>{{ $apuesta->resultados->resultado6 }}</div>
                             </div>
                             <div class="imagenes-equipos">
-                                <div><img src="{{asset('img/croacia.png')}}" alt=""></div>
+                                <div><img src="{{asset('img/iran.png')}}" alt=""></div>
                                 <div>vs</div>
-                                <div><img src="{{asset('img/canada.png')}}" alt=""></div>
+                                <div><img src="{{asset('img/eeuu.png')}}" alt=""></div>
                             </div>
                             <div class="marcador">
                                 <div>{{ $apuesta->apuesta5 }}</div>
                                 <div>{{ $apuesta->apuesta6 }}</div>
                             </div>
                             <div class="title">Apuesta</div>
-                            <div class="total">{{ $apuesta->total }}</div>
+                            <div class="total">{{ $apuesta->totalj3 }}</div>
                             <div class="pts-g">{{ $apuesta->ptsg3 }}</div>
                             <div class="pts-i1">{{ $apuesta->ptsi5 }}</div>
                             <div class="pts-i2">{{ $apuesta->ptsi6 }}</div>
@@ -162,16 +162,16 @@
                                 <div>{{ $apuesta->resultados->resultado8 }}</div>
                             </div>
                             <div class="imagenes-equipos">
-                                <div><img src="{{asset('img/españa.png')}}" alt=""></div>
+                                <div><img src="{{asset('img/gales.png')}}" alt=""></div>
                                 <div>vs</div>
-                                <div><img src="{{asset('img/alemania.png')}}" alt=""></div>
+                                <div><img src="{{asset('img/inglaterra.png')}}" alt=""></div>
                             </div>
                             <div class="marcador">
                                 <div>{{ $apuesta->apuesta7 }}</div>
                                 <div>{{ $apuesta->apuesta8 }}</div>
                             </div>
                             <div class="title">Apuesta</div>
-                            <div class="total">{{ $apuesta->total }}</div>
+                            <div class="total">{{ $apuesta->totalj4 }}</div>
                             <div class="pts-g">{{ $apuesta->ptsg4 }}</div>
                             <div class="pts-i1">{{ $apuesta->ptsi7 }}</div>
                             <div class="pts-i2">{{ $apuesta->ptsi8 }}</div>
@@ -198,16 +198,16 @@
                                 <div>{{ $apuesta->resultados->resultado10 }}</div>
                             </div>
                             <div class="imagenes-equipos">
-                                <div><img src="{{asset('img/camerun.png')}}" alt=""></div>
+                                <div><img src="{{asset('img/tunez.png')}}" alt=""></div>
                                 <div>vs</div>
-                                <div><img src="{{asset('img/serbia.png')}}" alt=""></div>
+                                <div><img src="{{asset('img/francia.png')}}" alt=""></div>
                             </div>
                             <div class="marcador">
                                 <div>{{ $apuesta->apuesta9 }}</div>
                                 <div>{{ $apuesta->apuesta10 }}</div>
                             </div>
                             <div class="title">Apuesta</div>
-                            <div class="total">{{ $apuesta->total }}</div>
+                            <div class="total">{{ $apuesta->totalj5 }}</div>
                             <div class="pts-g">{{ $apuesta->ptsg5 }}</div>
                             <div class="pts-i1">{{ $apuesta->ptsi9 }}</div>
                             <div class="pts-i2">{{ $apuesta->ptsi10 }}</div>
@@ -234,16 +234,16 @@
                                 <div>{{ $apuesta->resultados->resultado12 }}</div>
                             </div>
                             <div class="imagenes-equipos">
-                                <div><img src="{{asset('img/corea.png')}}" alt=""></div>
+                                <div><img src="{{asset('img/australia.png')}}" alt=""></div>
                                 <div>vs</div>
-                                <div><img src="{{asset('img/ghana.png')}}" alt=""></div>
+                                <div><img src="{{asset('img/dinamarca.png')}}" alt=""></div>
                             </div>
                             <div class="marcador">
                                 <div>{{ $apuesta->apuesta11 }}</div>
                                 <div>{{ $apuesta->apuesta12 }}</div>
                             </div>
                             <div class="title">Apuesta</div>
-                            <div class="total">{{ $apuesta->total }}</div>
+                            <div class="total">{{ $apuesta->totalj6 }}</div>
                             <div class="pts-g">{{ $apuesta->ptsg6 }}</div>
                             <div class="pts-i1">{{ $apuesta->ptsi11 }}</div>
                             <div class="pts-i2">{{ $apuesta->ptsi12 }}</div>
@@ -270,16 +270,16 @@
                                 <div>{{ $apuesta->resultados->resultado14 }}</div>
                             </div>
                             <div class="imagenes-equipos">
-                                <div><img src="{{asset('img/brazil.png')}}" alt=""></div>
+                                <div><img src="{{asset('img/polonia.png')}}" alt=""></div>
                                 <div>vs</div>
-                                <div><img src="{{asset('img/suiza.png')}}" alt=""></div>
+                                <div><img src="{{asset('img/argentina.png')}}" alt=""></div>
                             </div>
                             <div class="marcador">
                                 <div>{{ $apuesta->apuesta13 }}</div>
                                 <div>{{ $apuesta->apuesta14 }}</div>
                             </div>
                             <div class="title">Apuesta</div>
-                            <div class="total">{{ $apuesta->total }}</div>
+                            <div class="total">{{ $apuesta->totalj7 }}</div>
                             <div class="pts-g">{{ $apuesta->ptsg7 }}</div>
                             <div class="pts-i1">{{ $apuesta->ptsi13 }}</div>
                             <div class="pts-i2">{{ $apuesta->ptsi14 }}</div>
@@ -306,16 +306,16 @@
                                 <div>{{ $apuesta->resultados->resultado16 }}</div>
                             </div>
                             <div class="imagenes-equipos">
-                                <div><img src="{{asset('img/portugal.png')}}" alt=""></div>
+                                <div><img src="{{asset('img/arabia.png')}}" alt=""></div>
                                 <div>vs</div>
-                                <div><img src="{{asset('img/uruguay.png')}}" alt=""></div>
+                                <div><img src="{{asset('img/mexico.png')}}" alt=""></div>
                             </div>
                             <div class="marcador">
                                 <div>{{ $apuesta->apuesta15 }}</div>
                                 <div>{{ $apuesta->apuesta16 }}</div>
                             </div>
                             <div class="title">Apuesta</div>
-                            <div class="total">{{ $apuesta->total }}</div>
+                            <div class="total">{{ $apuesta->totalj8 }}</div>
                             <div class="pts-g">{{ $apuesta->ptsg8 }}</div>
                             <div class="pts-i1">{{ $apuesta->ptsi15 }}</div>
                             <div class="pts-i2">{{ $apuesta->ptsi16 }}</div>
@@ -345,22 +345,22 @@
             <thead>
               <tr>
                 <th scope="col">Nombre</th>
-                <th scope="col"><img src="{{asset('img/japon.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/costarica.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/belgica.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/marruecos.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/croacia.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/canada.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/españa.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/alemania.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/camerun.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/serbia.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/corea.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/ghana.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/brazil.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/suiza.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/portugal.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/uruguay.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/ecuador.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/senegal.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/paises.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/catar.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/iran.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/eeuu.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/gales.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/inglaterra.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/tunez.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/francia.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/australia.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/dinamarca.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/polonia.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/argentina.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/arabia.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/mexico.png')}}" width="30px" alt=""></th>
 
               </tr>
             </thead>
@@ -400,22 +400,22 @@
             <thead>
               <tr>
                 <th scope="col">Nombre</th>
-                <th scope="col"><img src="{{asset('img/japon.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/costarica.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/belgica.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/marruecos.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/croacia.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/canada.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/españa.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/alemania.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/camerun.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/serbia.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/corea.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/ghana.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/brazil.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/suiza.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/portugal.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/uruguay.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/ecuador.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/senegal.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/paises.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/catar.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/iran.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/eeuu.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/gales.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/inglaterra.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/tunez.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/francia.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/australia.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/dinamarca.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/polonia.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/argentina.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/arabia.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/mexico.png')}}" width="30px" alt=""></th>
 
               </tr>
             </thead>
@@ -451,26 +451,33 @@
     </div>
     <!-- posiciones -->
     <div class="tab-pane fade show" id="nav-posicion" role="tabpanel" aria-labelledby="nav-posicion-tab">
-        <table class="table table-dark table-hover text-center">
-            <thead>
-              <tr>
-                <th scope="col">Nombre</th>
-                <th scope="col">Total</th>
+        <div class="posiciones">
+            <div class="img-podio">
+              <img src="{{asset('img/podio.png')}}" alt="">
+              <h4>{{ $apuestas2->name }}</h4>
+            </div>
+
+            <table class="table table-dark table-hover text-center">
+                <thead>
+                <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Total</th>
 
 
-              </tr>
-            </thead>
-            <tbody>
-                @foreach ($apuestas as $apuesta)
-                    <tr>
-                        <td>{{ $apuesta->name }}</td>
-                        <td>{{ $apuesta->total }}</td>
-                    </tr>
-                @endforeach
+                </tr>
+                </thead>
+                <tbody>
+                    @foreach ($apuestas as $apuesta)
+                        <tr>
+                            <td>{{ $apuesta->name }}</td>
+                            <td>{{ $apuesta->total }}</td>
+                        </tr>
+                    @endforeach
 
 
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        </div>
     </div>
 
   </div>

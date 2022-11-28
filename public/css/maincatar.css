@@ -666,6 +666,19 @@ h5 {
 .contenido .tabla {
   width: 100%;
 }
+.contenido .img-podio{
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+.contenido .img-podio img{
+    width: 200px;
+}
+.contenido .img-podio h4{
+    position: absolute;
+    top: 80%;
+}
+
 .contenido .form-apuesta {
   display: grid;
   place-items: center;
