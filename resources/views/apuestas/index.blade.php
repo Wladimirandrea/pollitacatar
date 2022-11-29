@@ -454,7 +454,10 @@
         <div class="posiciones">
             <div class="img-podio">
               <img src="{{asset('img/podio.png')}}" alt="">
-              <h4>{{ $apuestas2->name }}</h4>
+                @if (isset($apuesta->name))
+                <h4>{{ $apuestas2->name }}</h4>
+                @endif
+
             </div>
 
             <table class="table table-dark table-hover text-center">

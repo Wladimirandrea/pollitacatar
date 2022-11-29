@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ApuestaController;
 use App\Http\Controllers\ResultadoController;
+use App\Http\Controllers\AdminApuestaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,7 +33,7 @@ Route::middleware('auth')->group(function () {
     Route::resource('resultados', ResultadoController::class);
 
 });
-
+Route::resource('admin/apuesta', AdminApuestaController::class);
 
 
 Route::get('/dashboard', function () {

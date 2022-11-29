@@ -97,6 +97,7 @@
 
               @yield('content')
               @yield('apuestas')
+              @yield('adminapuesta')
 
 
         </div>
