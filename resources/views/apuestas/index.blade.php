@@ -54,9 +54,9 @@
                             <div>{{ $apuesta->resultados->resultado2 }}</div>
                         </div>
                         <div class="imagenes-equipos">
-                            <div><img src="{{asset('img/ecuador.png')}}" alt=""></div>
+                            <div><img src="{{asset('img/paises.png')}}" alt=""></div>
                             <div>vs</div>
-                            <div><img src="{{asset('img/senegal.png')}}" alt=""></div>
+                            <div><img src="{{asset('img/eeuu.png')}}" alt=""></div>
                         </div>
                         <div class="marcador">
                             <div>{{ $apuesta->apuesta1 }}</div>
@@ -90,9 +90,9 @@
                                 <div>{{ $apuesta->resultados->resultado4 }}</div>
                             </div>
                             <div class="imagenes-equipos">
-                                <div><img src="{{asset('img/paises.png')}}" alt=""></div>
+                                <div><img src="{{asset('img/argentina.png')}}" alt=""></div>
                                 <div>vs</div>
-                                <div><img src="{{asset('img/catar.png')}}" alt=""></div>
+                                <div><img src="{{asset('img/australia.png')}}" alt=""></div>
                             </div>
                             <div class="marcador">
                                 <div>{{ $apuesta->apuesta3 }}</div>
@@ -126,9 +126,9 @@
                                 <div>{{ $apuesta->resultados->resultado6 }}</div>
                             </div>
                             <div class="imagenes-equipos">
-                                <div><img src="{{asset('img/iran.png')}}" alt=""></div>
+                                <div><img src="{{asset('img/francia.png')}}" alt=""></div>
                                 <div>vs</div>
-                                <div><img src="{{asset('img/eeuu.png')}}" alt=""></div>
+                                <div><img src="{{asset('img/polonia.png')}}" alt=""></div>
                             </div>
                             <div class="marcador">
                                 <div>{{ $apuesta->apuesta5 }}</div>
@@ -162,9 +162,9 @@
                                 <div>{{ $apuesta->resultados->resultado8 }}</div>
                             </div>
                             <div class="imagenes-equipos">
-                                <div><img src="{{asset('img/gales.png')}}" alt=""></div>
-                                <div>vs</div>
                                 <div><img src="{{asset('img/inglaterra.png')}}" alt=""></div>
+                                <div>vs</div>
+                                <div><img src="{{asset('img/senegal.png')}}" alt=""></div>
                             </div>
                             <div class="marcador">
                                 <div>{{ $apuesta->apuesta7 }}</div>
@@ -198,9 +198,9 @@
                                 <div>{{ $apuesta->resultados->resultado10 }}</div>
                             </div>
                             <div class="imagenes-equipos">
-                                <div><img src="{{asset('img/tunez.png')}}" alt=""></div>
+                                <div><img src="{{asset('img/japon.png')}}" alt=""></div>
                                 <div>vs</div>
-                                <div><img src="{{asset('img/francia.png')}}" alt=""></div>
+                                <div><img src="{{asset('img/croacia.png')}}" alt=""></div>
                             </div>
                             <div class="marcador">
                                 <div>{{ $apuesta->apuesta9 }}</div>
@@ -234,9 +234,9 @@
                                 <div>{{ $apuesta->resultados->resultado12 }}</div>
                             </div>
                             <div class="imagenes-equipos">
-                                <div><img src="{{asset('img/australia.png')}}" alt=""></div>
+                                <div><img src="{{asset('img/.png')}}" alt=""></div>
                                 <div>vs</div>
-                                <div><img src="{{asset('img/dinamarca.png')}}" alt=""></div>
+                                <div><img src="{{asset('img/.png')}}" alt=""></div>
                             </div>
                             <div class="marcador">
                                 <div>{{ $apuesta->apuesta11 }}</div>
@@ -270,9 +270,9 @@
                                 <div>{{ $apuesta->resultados->resultado14 }}</div>
                             </div>
                             <div class="imagenes-equipos">
-                                <div><img src="{{asset('img/polonia.png')}}" alt=""></div>
+                                <div><img src="{{asset('img/marruecos.png')}}" alt=""></div>
                                 <div>vs</div>
-                                <div><img src="{{asset('img/argentina.png')}}" alt=""></div>
+                                <div><img src="{{asset('img/españa.png')}}" alt=""></div>
                             </div>
                             <div class="marcador">
                                 <div>{{ $apuesta->apuesta13 }}</div>
@@ -306,9 +306,9 @@
                                 <div>{{ $apuesta->resultados->resultado16 }}</div>
                             </div>
                             <div class="imagenes-equipos">
-                                <div><img src="{{asset('img/arabia.png')}}" alt=""></div>
+                                <div><img src="{{asset('img/.png')}}" alt=""></div>
                                 <div>vs</div>
-                                <div><img src="{{asset('img/mexico.png')}}" alt=""></div>
+                                <div><img src="{{asset('img/.png')}}" alt=""></div>
                             </div>
                             <div class="marcador">
                                 <div>{{ $apuesta->apuesta15 }}</div>
