@@ -52,8 +52,8 @@ return new class extends Migration
             $table->integer('totalj4')->nullable();
 
 
-            $table->integer('apuesta9');
-            $table->integer('apuesta10');
+            $table->integer('apuesta9')->nullable();
+            $table->integer('apuesta10')->nullable();
             $table->integer('ptsg5')->nullable();
             $table->integer('ptsi9')->nullable();
             $table->integer('ptsi10')->nullable();
@@ -61,24 +61,24 @@ return new class extends Migration
             $table->integer('totalj5')->nullable();
 
 
-            $table->integer('apuesta11');
-            $table->integer('apuesta12');
+            $table->integer('apuesta11')->nullable();
+            $table->integer('apuesta12')->nullable();
             $table->integer('ptsg6')->nullable();
             $table->integer('ptsi11')->nullable();
             $table->integer('ptsi12')->nullable();
             $table->integer('ptsab6')->nullable();
             $table->integer('totalj6')->nullable();
 
-            $table->integer('apuesta13');
-            $table->integer('apuesta14');
+            $table->integer('apuesta13')->nullable();
+            $table->integer('apuesta14')->nullable();
             $table->integer('ptsg7')->nullable();
             $table->integer('ptsi13')->nullable();
             $table->integer('ptsi14')->nullable();
             $table->integer('ptsab7')->nullable();
             $table->integer('totalj7')->nullable();
 
-            $table->integer('apuesta15');
-            $table->integer('apuesta16');
+            $table->integer('apuesta15')->nullable();
+            $table->integer('apuesta16')->nullable();
             $table->integer('ptsg8')->nullable();
             $table->integer('ptsi15')->nullable();
             $table->integer('ptsi16')->nullable();

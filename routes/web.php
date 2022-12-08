@@ -26,14 +26,15 @@ Route::get('/', function () {
     return view('auth.login');
 });
 Route::resource('apuestas', ApuestaController::class);
+Route::get('/admin/apuestas', [App\Http\Controllers\ApuestaController::class, 'editar']);
 Route::resource('resultados', ResultadoController::class);
 
 Route::middleware('auth')->group(function () {
-    Route::resource('apuestas', ApuestaController::class);
+
     Route::resource('resultados', ResultadoController::class);
 
 });
-Route::resource('admin/apuesta', AdminApuestaController::class);
+
 
 
 Route::get('/dashboard', function () {

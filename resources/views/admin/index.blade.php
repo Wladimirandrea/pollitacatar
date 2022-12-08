@@ -2,72 +2,30 @@
 
 @section('adminapuesta')
 
+<table class="table table-bordered">
+    <tr>
+    <th>S.No</th>
+    <th>Company Name</th>
+    <th>Company Email</th>
+    <th>Company Address</th>
+    <th width="280px">Action</th>
+    </tr>
+    @foreach ($apuestas as $apuesta)
+    <tr>
+    <td>{{ $apuesta->id }}</td>
+    <td>{{ $apuesta->name }}</td>
 
-    <div class="row">
+    <td>
+        <a class="btn btn-primary" href="{{ route('apuestas.edit',$apuesta->id) }}">Edit</a>
+    {{-- <form action="{{ route('admin.destroy',$apuesta->id) }}" method="Post">
 
-        <div class="col-lg-12 margin-tb">
-
-
-
-            <div class="pull-right">
-
-
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-
-
-
-
-
-    <table class="table table-bordered">
-
-        <tr>
-
-            <th>No</th>
-
-            <th>Name</th>
-
-            <th>Details</th>
-
-            <th width="280px">Action</th>
-
-        </tr>
-
-        @foreach ($apuestas as $apuesta)
-
-        <tr>
-
-
-
-            <td>{{ $apuesta->name }}</td>
-
-
-
-            <td>
-
-                <td>
-                    <form action="{{ route('apuesta.destroy',$apuesta->id) }}" method="Post">
-                        {{-- <a class="btn btn-primary" href="{{ route('companies.edit',$company->id) }}">Edit</a> --}}
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit" class="btn btn-danger">Delete</button>
-                    </form>
-                </td>
-
-            </td>
-
-        </tr>
-
-        @endforeach
-
+    @csrf
+    @method('DELETE')
+    <button type="submit" class="btn btn-danger">Delete</button>
+    </form> --}}
+    </td>
+    </tr>
+    @endforeach
     </table>
-
-
 
 @endsection

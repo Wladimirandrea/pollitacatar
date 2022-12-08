@@ -834,8 +834,15 @@ class ApuestaController extends Controller
      */
     public function edit(Apuesta $apuesta)
     {
-        //
+        return view('apuestas.edit',compact('apuesta'));
     }
+
+    public function editar()
+    {
+        $apuestas = Apuesta::all();
+        return view('apuestas.editar',compact('apuestas'));
+    }
+
 
     /**
      * Update the specified resource in storage.
@@ -846,7 +853,13 @@ class ApuestaController extends Controller
      */
     public function update(Request $request, Apuesta $apuesta)
     {
-        //
+        $apuesta->update($request->all());
+
+
+
+        return redirect()->route('apuestas.index')
+
+                        ->with('success','Product updated successfully');
     }
 
     /**

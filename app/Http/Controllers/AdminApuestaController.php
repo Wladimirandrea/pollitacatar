@@ -56,9 +56,9 @@ class AdminApuestaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Apuesta $apuesta)
     {
-        //
+    return view('admin.edit',compact('apuesta'));
     }
 
     /**
