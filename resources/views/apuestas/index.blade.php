@@ -37,7 +37,7 @@
         </div>
 
         <div class="resultados">
-            <a href="{{url('apuestas/create')}}" class="btn btn-success float-left">Apostar</a>
+            
 
           <div class="tab-content" id="pills-tabContent">
             <!-- Juego1 -->
