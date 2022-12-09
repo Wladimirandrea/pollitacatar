@@ -353,8 +353,8 @@
                 <th scope="col"><img src="{{asset('img/portugal.png')}}" width="30px" alt=""></th>
                 <th scope="col"><img src="{{asset('img/inglaterra.png')}}" width="30px" alt=""></th>
                 <th scope="col"><img src="{{asset('img/francia.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/semi.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/semi.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/argentina.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/croacia.png')}}" width="30px" alt=""></th>
                 <th scope="col"><img src="{{asset('img/semi.png')}}" width="30px" alt=""></th>
                 <th scope="col"><img src="{{asset('img/semi.png')}}" width="30px" alt=""></th>
                 <th scope="col"><img src="{{asset('img/tercero.png')}}" width="30px" alt=""></th>
@@ -408,8 +408,8 @@
                 <th scope="col"><img src="{{asset('img/portugal.png')}}" width="30px" alt=""></th>
                 <th scope="col"><img src="{{asset('img/inglaterra.png')}}" width="30px" alt=""></th>
                 <th scope="col"><img src="{{asset('img/francia.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/semi.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/semi.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/argentina.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/croacia.png')}}" width="30px" alt=""></th>
                 <th scope="col"><img src="{{asset('img/semi.png')}}" width="30px" alt=""></th>
                 <th scope="col"><img src="{{asset('img/semi.png')}}" width="30px" alt=""></th>
                 <th scope="col"><img src="{{asset('img/tercero.png')}}" width="30px" alt=""></th>
