@@ -868,8 +868,11 @@ class ApuestaController extends Controller
      * @param  \App\Models\Apuesta  $apuesta
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Apuesta $apuesta)
+    public function destroy($id)
     {
-        //
+        $apuesta = Apuesta::find($id);
+        $apuesta->delete(); // Easy right?
+ 
+        return redirect('/apuestas')->with('success', 'Stock removed.'); 
     }
 }
