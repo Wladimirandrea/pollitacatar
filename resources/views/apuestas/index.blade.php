@@ -234,9 +234,9 @@
                                 <div>{{ $apuesta->resultados->resultado12 }}</div>
                             </div>
                             <div class="imagenes-equipos">
-                                <div><img src="{{asset('img/semi.png')}}" alt=""></div>
+                                <div><img src="{{asset('img/francia.png')}}" alt=""></div>
                                 <div>vs</div>
-                                <div><img src="{{asset('img/semi.png')}}" alt=""></div>
+                                <div><img src="{{asset('img/marruecos.png')}}" alt=""></div>
                             </div>
                             <div class="marcador">
                                 <div>{{ $apuesta->apuesta11 }}</div>
