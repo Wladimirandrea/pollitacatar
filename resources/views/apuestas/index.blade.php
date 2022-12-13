@@ -270,7 +270,7 @@
                                 <div>{{ $apuesta->resultados->resultado14 }}</div>
                             </div>
                             <div class="imagenes-equipos">
-                                <div><img src="{{asset('img/tercero.png')}}" alt=""></div>
+                                <div><img src="{{asset('img/croacia.png')}}" alt=""></div>
                                 <div>vs</div>
                                 <div><img src="{{asset('img/tercero.png')}}" alt=""></div>
                             </div>
@@ -306,7 +306,7 @@
                                 <div>{{ $apuesta->resultados->resultado16 }}</div>
                             </div>
                             <div class="imagenes-equipos">
-                                <div><img src="{{asset('img/final.png')}}" alt=""></div>
+                                <div><img src="{{asset('img/argentina.png')}}" alt=""></div>
                                 <div>vs</div>
                                 <div><img src="{{asset('img/final.png')}}" alt=""></div>
                             </div>
@@ -357,9 +357,9 @@
                 <th scope="col"><img src="{{asset('img/croacia.png')}}" width="30px" alt=""></th>
                 <th scope="col"><img src="{{asset('img/francia.png')}}" width="30px" alt=""></th>
                 <th scope="col"><img src="{{asset('img/marruecos.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/croacia.png')}}" width="30px" alt=""></th>
                 <th scope="col"><img src="{{asset('img/tercero.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/tercero.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/final.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/argentina.png')}}" width="30px" alt=""></th>
                 <th scope="col"><img src="{{asset('img/final.png')}}" width="30px" alt=""></th>
 
               </tr>
@@ -412,9 +412,9 @@
                 <th scope="col"><img src="{{asset('img/croacia.png')}}" width="30px" alt=""></th>
                 <th scope="col"><img src="{{asset('img/francia.png')}}" width="30px" alt=""></th>
                 <th scope="col"><img src="{{asset('img/marruecos.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/croacia.png')}}" width="30px" alt=""></th>
                 <th scope="col"><img src="{{asset('img/tercero.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/tercero.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/final.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/argentina.png')}}" width="30px" alt=""></th>
                 <th scope="col"><img src="{{asset('img/final.png')}}" width="30px" alt=""></th>
 
               </tr>
