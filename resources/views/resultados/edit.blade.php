@@ -35,28 +35,28 @@
             <input type="number" name="resultado8" value="{{ $resultado->resultado8 }}" class="inmarca2">
         </div>
         <div class="tarjeta">
-            <img src="{{asset('img/semi.png')}}" alt="">
+            <img src="{{asset('img/argentina.png')}}" alt="">
             <h5>VS</h5>
-            <img src="{{asset('img/semi.png')}}" alt="">
+            <img src="{{asset('img/croacia.png')}}" alt="">
             <input type="number" name="resultado9" value="{{ $resultado->resultado9 }}" class="inmarca">
             <input type="number" name="resultado10" value="{{ $resultado->resultado10 }}" class="inmarca2">
         </div>
         <div class="tarjeta">
-            <img src="{{asset('img/semi.png')}}" alt="">
+            <img src="{{asset('img/francia.png')}}" alt="">
             <h5>VS</h5>
-            <img src="{{asset('img/semi.png')}}" alt="">
+            <img src="{{asset('img/marruecos.png')}}" alt="">
             <input type="number" name="resultado11" value="{{ $resultado->resultado11 }}" class="inmarca">
             <input type="number" name="resultado12" value="{{ $resultado->resultado12 }}" class="inmarca2">
         </div>
         <div class="tarjeta">
-            <img src="{{asset('img/tercero.png')}}" alt="">
+            <img src="{{asset('img/croacia.png')}}" alt="">
             <h5>VS</h5>
             <img src="{{asset('img/tercero.png')}}" alt="">
             <input type="number" name="resultado13" value="{{ $resultado->resultado13 }}" class="inmarca">
             <input type="number" name="resultado14" value="{{ $resultado->resultado14 }}" class="inmarca2">
         </div>
         <div class="tarjeta">
-            <img src="{{asset('img/final.png')}}" alt="">
+            <img src="{{asset('img/argentina.png')}}" alt="">
             <h5>VS</h5>
             <img src="{{asset('img/final.png')}}" alt="">
             <input type="number" name="resultado15" value="{{ $resultado->resultado15 }}" class="inmarca">
