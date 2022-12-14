@@ -272,7 +272,7 @@
                             <div class="imagenes-equipos">
                                 <div><img src="{{asset('img/croacia.png')}}" alt=""></div>
                                 <div>vs</div>
-                                <div><img src="{{asset('img/tercero.png')}}" alt=""></div>
+                                <div><img src="{{asset('img/marruecos.png')}}" alt=""></div>
                             </div>
                             <div class="marcador">
                                 <div>{{ $apuesta->apuesta13 }}</div>
@@ -308,7 +308,7 @@
                             <div class="imagenes-equipos">
                                 <div><img src="{{asset('img/argentina.png')}}" alt=""></div>
                                 <div>vs</div>
-                                <div><img src="{{asset('img/final.png')}}" alt=""></div>
+                                <div><img src="{{asset('img/francia.png')}}" alt=""></div>
                             </div>
                             <div class="marcador">
                                 <div>{{ $apuesta->apuesta15 }}</div>
@@ -358,9 +358,9 @@
                 <th scope="col"><img src="{{asset('img/francia.png')}}" width="30px" alt=""></th>
                 <th scope="col"><img src="{{asset('img/marruecos.png')}}" width="30px" alt=""></th>
                 <th scope="col"><img src="{{asset('img/croacia.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/tercero.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/marruecos.png')}}" width="30px" alt=""></th>
                 <th scope="col"><img src="{{asset('img/argentina.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/final.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/francia.png')}}" width="30px" alt=""></th>
 
               </tr>
             </thead>
@@ -413,9 +413,9 @@
                 <th scope="col"><img src="{{asset('img/francia.png')}}" width="30px" alt=""></th>
                 <th scope="col"><img src="{{asset('img/marruecos.png')}}" width="30px" alt=""></th>
                 <th scope="col"><img src="{{asset('img/croacia.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/tercero.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/marruecos.png')}}" width="30px" alt=""></th>
                 <th scope="col"><img src="{{asset('img/argentina.png')}}" width="30px" alt=""></th>
-                <th scope="col"><img src="{{asset('img/final.png')}}" width="30px" alt=""></th>
+                <th scope="col"><img src="{{asset('img/francia.png')}}" width="30px" alt=""></th>
 
               </tr>
             </thead>
