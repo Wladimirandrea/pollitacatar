@@ -50,16 +50,16 @@
             <input type="number" name="apuesta12" class="inmarca2" value="{{$apuesta->apuesta12}}">
         </div>
         <div class="tarjeta">
-            <img src="{{asset('img/tercero.png')}}" alt="">
+            <img src="{{asset('img/croacia.png')}}" alt="">
             <h5>VS</h5>
-            <img src="{{asset('img/tercero.png')}}" alt="">
+            <img src="{{asset('img/marruecos.png')}}" alt="">
             <input type="number" name="apuesta13" class="inmarca" value="{{$apuesta->apuesta13}}">
             <input type="number" name="apuesta14" class="inmarca2" value="{{$apuesta->apuesta14}}">
         </div>
         <div class="tarjeta">
-            <img src="{{asset('img/final.png')}}" alt="">
+            <img src="{{asset('img/argentina.png')}}" alt="">
             <h5>VS</h5>
-            <img src="{{asset('img/final.png')}}" alt="">
+            <img src="{{asset('img/francia.png')}}" alt="">
             <input type="number" name="apuesta15" class="inmarca" value="{{$apuesta->apuesta15}}">
             <input type="number" name="apuesta16" class="inmarca2" value="{{$apuesta->apuesta16}}">
 
