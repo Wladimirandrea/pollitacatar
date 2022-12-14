@@ -51,14 +51,14 @@
         <div class="tarjeta">
             <img src="{{asset('img/croacia.png')}}" alt="">
             <h5>VS</h5>
-            <img src="{{asset('img/tercero.png')}}" alt="">
+            <img src="{{asset('img/marruecos.png')}}" alt="">
             <input type="number" name="resultado13" value="{{ $resultado->resultado13 }}" class="inmarca">
             <input type="number" name="resultado14" value="{{ $resultado->resultado14 }}" class="inmarca2">
         </div>
         <div class="tarjeta">
             <img src="{{asset('img/argentina.png')}}" alt="">
             <h5>VS</h5>
-            <img src="{{asset('img/final.png')}}" alt="">
+            <img src="{{asset('img/francia.png')}}" alt="">
             <input type="number" name="resultado15" value="{{ $resultado->resultado15 }}" class="inmarca">
             <input type="number" name="resultado16" value="{{ $resultado->resultado16 }}" class="inmarca2">
             <input type="hidden" name="id_resultado" value="1" class="form-control" placeholder="Name">
